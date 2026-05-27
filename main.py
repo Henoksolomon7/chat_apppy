@@ -3,7 +3,7 @@ from flask_login import LoginManager, login_user, logout_user, login_required, c
 from werkzeug.security import generate_password_hash, check_password_hash
 from database import db, User, Message
 import sqlalchemy as sa
-
+#from main import app
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your-secret-key-here-change-this'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///messages.db'
